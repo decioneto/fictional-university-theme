@@ -8,13 +8,37 @@ function university_files() {
   wp_enqueue_style('university_extra_styles', get_theme_file_uri('/build/index.css'));
 }
 
-add_action('wp_enqueue_scripts', 'university_files');
+add_action('wp_enqueue_scripts', 'university_files'); //função usada para adicionae styles e scripts
 
 function university_features() {
-  // register_nav_menu('headerMenuLocation', 'Header Menu Location');
+  /*  
+    * funções para utilizar os menus criados no admin
+  */
+
+  // register_nav_menu('headerMenuLocation', 'Header Menu Location'); 
   // register_nav_menu('footerMenuLocationOne', 'Footer Menu Location One');
   // register_nav_menu('footerMenuLocationTwo', 'Footer Menu Location Two');
   add_theme_support('title-tag');
 }
 
+/*  
+  * função usada para adicionar features nas páginas
+  * nesse caso, usado para adicional os titles em cada página
+  * ou também para usar os menus criados no admin
+*/
 add_action('after_setup_theme', 'university_features');
+
+// function university_post_types() {
+//   register_post_type('event', array(
+//     'public' => true,
+//     'labels' => array(
+//       'name' => 'Events'
+//     ),
+//     'menu_icon' => 'dashicons-calendar'
+//   ));
+// }
+
+// /*  
+//   * função usada para adicionar custom posts type
+// */
+// add_action('init', 'university_post_types');

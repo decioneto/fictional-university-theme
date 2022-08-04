@@ -1,3 +1,5 @@
+<!-- Páginas responsável para exibir informações do post -->
+
 <?php get_header(); ?>
 
 <div class="page-banner">
