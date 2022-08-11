@@ -1,0 +1,29 @@
+{
+  "name": "fictional-university",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decioneto/fictional-university-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decioneto/fictional-university-theme/issues"
+  },
+  "homepage": "https://github.com/decioneto/fictional-university-theme#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^23.7.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "normalize.css": "^8.0.1"
+  }
+}
